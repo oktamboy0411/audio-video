@@ -1,0 +1,99 @@
+/* Simple styles for audio/video demo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial;
+  background: #f7f9fc;
+  color: #111;
+  margin: 0;
+  padding: 24px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #e6ecf2;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(20, 30, 60, 0.06);
+}
+audio,
+video {
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+  border-radius: 6px;
+}
+video {
+  height: auto;
+  max-height: 480px;
+  background: #000;
+}
+.hint {
+  font-size: 13px;
+  color: #556;
+  margin-top: 8px;
+}
+
+.canvas-tools {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+.canvas-tools label {
+  font-size: 14px;
+  color: #223;
+}
+.canvas-tools input[type="range"] {
+  vertical-align: middle;
+}
+.canvas-wrap {
+  margin-top: 12px;
+  border: 1px solid #e3e8ef;
+  border-radius: 6px;
+  padding: 8px;
+  background: #f9fbff;
+}
+#drawCanvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  touch-action: none;
+  border-radius: 4px;
+}
+
+.chart-wrap {
+  margin-top: 18px;
+  border: 1px solid #e6eef8;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+}
+#chartSvg {
+  width: 100%;
+  height: 320px;
+  display: block;
+}
+.chart-legend {
+  font-size: 13px;
+  color: #445;
+  margin-top: 8px;
+}
+.axis text {
+  fill: #556;
+  font-size: 12px;
+}
+.bar {
+  fill: #3b82f6;
+}
+.bar-label {
+  font-size: 12px;
+  fill: #042;
+}
